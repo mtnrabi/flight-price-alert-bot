@@ -1,0 +1,208 @@
+[
+  {
+    "price_range_in_relation_to_other_periods": "typical",
+    "price_insights_low": 470,
+    "price_insights_high": 660,
+    "from_airport": "New York (JFK)",
+    "to_airport": "Lisbon (LIS)",
+    "departure_date": "2027-02-01",
+    "return_date": "2027-02-08",
+    "total_price": "$628",
+    "total_price_as_number": 628,
+    "total_duration_seconds": 55800,
+    "total_stops": 0,
+    "buy_link": "https://www.google.com/travel/flights?tfs=GjsSCjIwMjctMDItMDEiHwoDSkZLEgoyMDI3LTAyLTAxGgNMSVMqAlRQMgMyMTBqBRIDSkZLcgUSA0xJUxo7EgoyMDI3LTAyLTA4Ih8KA0xJUxIKMjAyNy0wMi0wOBoDSkZLKgJUUDIDMjA5agUSA0xJU3IFEgNKRktCAQFIAZgBAQ&curr=usd",
+    "departure_flight_departure_description": "10:00 PM on Mon, Feb 1",
+    "departure_flight_arrival_description": "10:00 AM on Tue, Feb 2",
+    "departure_flight_airline": "Tap Air Portugal | JetBlue",
+    "departure_flight_stops": 0,
+    "departure_flight_duration": "7 hr",
+    "departure_stops_info": [],
+    "return_flight_departure_description": "4:35 PM on Mon, Feb 8",
+    "return_flight_arrival_description": "8:05 PM on Mon, Feb 8",
+    "return_flight_airline": "Tap Air Portugal | JetBlue",
+    "return_flight_stops": 0,
+    "return_flight_duration": "8 hr 30 min",
+    "return_stops_info": []
+  },
+  {
+    "price_range_in_relation_to_other_periods": "typical",
+    "price_insights_low": 470,
+    "price_insights_high": 660,
+    "from_airport": "New York (JFK)",
+    "to_airport": "Lisbon (LIS)",
+    "departure_date": "2027-02-01",
+    "return_date": "2027-02-08",
+    "total_price": "$687",
+    "total_price_as_number": 687,
+    "total_duration_seconds": 154800,
+    "total_stops": 2,
+    "buy_link": "https://www.google.com/travel/flights?tfs=GlwSCjIwMjctMDItMDEiHgoDSkZLEgoyMDI3LTAyLTAxGgNaUkgqAkxYMgIxNSIgCgNaUkgSCjIwMjctMDItMDIaA0xJUyoCTFgyBDIwODRqBRIDSkZLcgUSA0xJUxpcEgoyMDI3LTAyLTA4IiAKA0xJUxIKMjAyNy0wMi0wOBoDWlJIKgJMWDIEMjA4NyIeCgNaUkgSCjIwMjctMDItMDkaA0pGSyoCTFgyAjE2agUSA0xJU3IFEgNKRktCAQFIAZgBAQ&curr=usd",
+    "departure_flight_departure_description": "9:00 PM on Mon, Feb 1",
+    "departure_flight_arrival_description": "2:35 PM on Tue, Feb 2",
+    "departure_flight_airline": "SWISSOperated by Air Baltic",
+    "departure_flight_stops": 1,
+    "departure_flight_duration": "12 hr 35 min",
+    "departure_stops_info": [
+      {
+        "stop_airport": "ZRH",
+        "stop_duration_seconds": 6300
+      }
+    ],
+    "return_flight_departure_description": "11:50 AM on Mon, Feb 8",
+    "return_flight_arrival_description": "1:15 PM on Tue, Feb 9",
+    "return_flight_airline": "SWISS",
+    "return_flight_stops": 1,
+    "return_flight_duration": "30 hr 25 min",
+    "return_stops_info": [
+      {
+        "stop_airport": "ZRH",
+        "stop_duration_seconds": 65700
+      }
+    ]
+  },
+  {
+    "price_range_in_relation_to_other_periods": "typical",
+    "price_insights_low": 470,
+    "price_insights_high": 660,
+    "from_airport": "New York (JFK)",
+    "to_airport": "Lisbon (LIS)",
+    "departure_date": "2027-02-01",
+    "return_date": "2027-02-08",
+    "total_price": "$687",
+    "total_price_as_number": 687,
+    "total_duration_seconds": 141300,
+    "total_stops": 2,
+    "buy_link": "https://www.google.com/travel/flights?tfs=GlwSCjIwMjctMDItMDEiHgoDSkZLEgoyMDI3LTAyLTAxGgNaUkgqAkxYMgIxNSIgCgNaUkgSCjIwMjctMDItMDIaA0xJUyoCTFgyBDIwODRqBRIDSkZLcgUSA0xJUxpcEgoyMDI3LTAyLTA4IiAKA0xJUxIKMjAyNy0wMi0wOBoDWlJIKgJMWDIEMjA4NSIeCgNaUkgSCjIwMjctMDItMDkaA0pGSyoCTFgyAjE2agUSA0xJU3IFEgNKRktCAQFIAZgBAQ&curr=usd",
+    "departure_flight_departure_description": "9:00 PM on Mon, Feb 1",
+    "departure_flight_arrival_description": "2:35 PM on Tue, Feb 2",
+    "departure_flight_airline": "SWISSOperated by Air Baltic",
+    "departure_flight_stops": 1,
+    "departure_flight_duration": "12 hr 35 min",
+    "departure_stops_info": [
+      {
+        "stop_airport": "ZRH",
+        "stop_duration_seconds": 6300
+      }
+    ],
+    "return_flight_departure_description": "3:35 PM on Mon, Feb 8",
+    "return_flight_arrival_description": "1:15 PM on Tue, Feb 9",
+    "return_flight_airline": "SWISSOperated by Air Baltic",
+    "return_flight_stops": 1,
+    "return_flight_duration": "26 hr 40 min",
+    "return_stops_info": [
+      {
+        "stop_airport": "ZRH",
+        "stop_duration_seconds": 52200
+      }
+    ]
+  },
+  {
+    "price_range_in_relation_to_other_periods": "typical",
+    "price_insights_low": 470,
+    "price_insights_high": 660,
+    "from_airport": "New York (JFK)",
+    "to_airport": "Lisbon (LIS)",
+    "departure_date": "2027-02-01",
+    "return_date": "2027-02-08",
+    "total_price": "$691",
+    "total_price_as_number": 691,
+    "total_duration_seconds": 144000,
+    "total_stops": 2,
+    "buy_link": "https://www.google.com/travel/flights?tfs=Gl0SCjIwMjctMDItMDEiHwoDSkZLEgoyMDI3LTAyLTAxGgNCUlUqAlNOMgM1MDIiIAoDQlJVEgoyMDI3LTAyLTAyGgNMSVMqAlNOMgQzODE1agUSA0pGS3IFEgNMSVMaXBIKMjAyNy0wMi0wOCIgCgNMSVMSCjIwMjctMDItMDgaA1pSSCoCTFgyBDIwODUiHgoDWlJIEgoyMDI3LTAyLTA5GgNKRksqAkxYMgIxNmoFEgNMSVNyBRIDSkZLQgEBSAGYAQE&curr=usd",
+    "departure_flight_departure_description": "6:25 PM on Mon, Feb 1",
+    "departure_flight_arrival_description": "12:45 PM on Tue, Feb 2",
+    "departure_flight_airline": "Brussels Airlines | United",
+    "departure_flight_stops": 1,
+    "departure_flight_duration": "13 hr 20 min",
+    "departure_stops_info": [
+      {
+        "stop_airport": "BRU",
+        "stop_duration_seconds": 11400
+      }
+    ],
+    "return_flight_departure_description": "3:35 PM on Mon, Feb 8",
+    "return_flight_arrival_description": "1:15 PM on Tue, Feb 9",
+    "return_flight_airline": "SWISSOperated by Air Baltic",
+    "return_flight_stops": 1,
+    "return_flight_duration": "26 hr 40 min",
+    "return_stops_info": [
+      {
+        "stop_airport": "ZRH",
+        "stop_duration_seconds": 52200
+      }
+    ]
+  },
+  {
+    "price_range_in_relation_to_other_periods": "typical",
+    "price_insights_low": 470,
+    "price_insights_high": 660,
+    "from_airport": "New York (JFK)",
+    "to_airport": "Lisbon (LIS)",
+    "departure_date": "2027-02-01",
+    "return_date": "2027-02-08",
+    "total_price": "$699",
+    "total_price_as_number": 699,
+    "total_duration_seconds": 95700,
+    "total_stops": 2,
+    "buy_link": "https://www.google.com/travel/flights?tfs=GlwSCjIwMjctMDItMDEiHwoDSkZLEgoyMDI3LTAyLTAxGgNMSFIqAkFBMgMxMDQiHwoDTEhSEgoyMDI3LTAyLTAyGgNMSVMqAkJBMgM1MDZqBRIDSkZLcgUSA0xJUxpcEgoyMDI3LTAyLTA4Ih8KA0xJUxIKMjAyNy0wMi0wOBoDTUFEKgJJQjIDNTQwIh8KA01BRBIKMjAyNy0wMi0wOBoDSkZLKgJJQjIDMjExagUSA0xJU3IFEgNKRktCAQFIAZgBAQ&curr=usd",
+    "departure_flight_departure_description": "9:25 PM on Mon, Feb 1",
+    "departure_flight_arrival_description": "2:55 PM on Tue, Feb 2",
+    "departure_flight_airline": "American, British Airways | Finnair",
+    "departure_flight_stops": 1,
+    "departure_flight_duration": "12 hr 30 min",
+    "departure_stops_info": [
+      {
+        "stop_airport": "LHR",
+        "stop_duration_seconds": 8100
+      }
+    ],
+    "return_flight_departure_description": "6:30 AM on Mon, Feb 8",
+    "return_flight_arrival_description": "3:35 PM on Mon, Feb 8",
+    "return_flight_airline": "Iberia | American, Finnair",
+    "return_flight_stops": 1,
+    "return_flight_duration": "14 hr 5 min",
+    "return_stops_info": [
+      {
+        "stop_airport": "MAD",
+        "stop_duration_seconds": 12300
+      }
+    ]
+  },
+  {
+    "price_range_in_relation_to_other_periods": "typical",
+    "price_insights_low": 470,
+    "price_insights_high": 660,
+    "from_airport": "New York (JFK)",
+    "to_airport": "Lisbon (LIS)",
+    "departure_date": "2027-02-01",
+    "return_date": "2027-02-08",
+    "total_price": "$699",
+    "total_price_as_number": 699,
+    "total_duration_seconds": 108900,
+    "total_stops": 2,
+    "buy_link": "https://www.google.com/travel/flights?tfs=GlwSCjIwMjctMDItMDEiHwoDSkZLEgoyMDI3LTAyLTAxGgNMSFIqAkFBMgMxMDQiHwoDTEhSEgoyMDI3LTAyLTAyGgNMSVMqAkJBMgM1MDZqBRIDSkZLcgUSA0xJUxpcEgoyMDI3LTAyLTA4Ih8KA0xJUxIKMjAyNy0wMi0wOBoDTUFEKgJJQjIDNTQwIh8KA01BRBIKMjAyNy0wMi0wOBoDSkZLKgJJQjIDMzI1agUSA0xJU3IFEgNKRktCAQFIAZgBAQ&curr=usd",
+    "departure_flight_departure_description": "9:25 PM on Mon, Feb 1",
+    "departure_flight_arrival_description": "2:55 PM on Tue, Feb 2",
+    "departure_flight_airline": "American, British Airways | Finnair",
+    "departure_flight_stops": 1,
+    "departure_flight_duration": "12 hr 30 min",
+    "departure_stops_info": [
+      {
+        "stop_airport": "LHR",
+        "stop_duration_seconds": 8100
+      }
+    ],
+    "return_flight_departure_description": "6:30 AM on Mon, Feb 8",
+    "return_flight_arrival_description": "7:15 PM on Mon, Feb 8",
+    "return_flight_airline": "Iberia | American",
+    "return_flight_stops": 1,
+    "return_flight_duration": "17 hr 45 min",
+    "return_stops_info": [
+      {
+        "stop_airport": "MAD",
+        "stop_duration_seconds": 26700
+      }
+    ]
+  }
+]

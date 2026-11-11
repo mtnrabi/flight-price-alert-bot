@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="620" height="314" viewBox="0 0 620 314">
+<rect width="620" height="314" rx="12" fill="#0e1621"/>
+<rect width="620" height="52" rx="12" fill="#17212b"/><rect y="40" width="620" height="12" fill="#17212b"/>
+<circle cx="34" cy="26" r="16" fill="#3a8fd9"/><text x="34" y="31" font-family="Helvetica,Arial,sans-serif" font-size="15" fill="#fff" text-anchor="middle">✈</text>
+<text x="60" y="23" font-family="Helvetica,Arial,sans-serif" font-size="15" font-weight="bold" fill="#fff">Fare alerts</text>
+<text x="60" y="41" font-family="Helvetica,Arial,sans-serif" font-size="12" fill="#6c7883">bot</text>
+<rect x="16" y="70" width="560" height="204" rx="14" fill="#182533"/>
+<text x="34" y="104" font-family="Helvetica,Arial,sans-serif" font-size="15" fill="#ffffff" font-weight="bold" xml:space="preserve">✈️ Fare alert: London to Barcelona, Fri 12 Mar</text>
+<text x="34" y="128" font-family="Helvetica,Arial,sans-serif" font-size="15" fill="#dce3ea" font-weight="bold" xml:space="preserve">121 USD one way · Vueling | British Airways, Iberia · 0 stops</text>
+<text x="34" y="152" font-family="Helvetica,Arial,sans-serif" font-size="15" fill="#dce3ea" xml:space="preserve">Departs 8:50 PM on Fri, Mar 12</text>
+<text x="34" y="176" font-family="Helvetica,Arial,sans-serif" font-size="15" fill="#dce3ea" xml:space="preserve">Why: at or under your target of 130</text>
+<text x="34" y="200" font-family="Helvetica,Arial,sans-serif" font-size="15" fill="#dce3ea" xml:space="preserve">Google: typical (usual 50-135 USD)</text>
+<text x="34" y="224" font-family="Helvetica,Arial,sans-serif" font-size="15" fill="#6ab3f3" xml:space="preserve">Book: https://www.google.com/travel/flights?tfs=GjwSCjIwMjctMD…</text>
+<text x="34" y="248" font-family="Helvetica,Arial,sans-serif" font-size="15" fill="#8a9aa9" xml:space="preserve">Fetched 2026-11-11 21:57 UTC. Fares change fast.</text>
+<text x="310.0" y="300" font-family="Helvetica,Arial,sans-serif" font-size="11" fill="#6c7883" text-anchor="middle">The alert text this bot sends, rendered from a recorded API response (fetched 2026-11-11 21:57 UTC)</text>
+</svg>

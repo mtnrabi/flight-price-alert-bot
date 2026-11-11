@@ -1,0 +1,7 @@
+.env
+watches.json
+state.json
+data/
+__pycache__/
+.pytest_cache/
+.venv/

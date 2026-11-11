@@ -1,0 +1,18 @@
+[
+  {
+    "name": "London to Barcelona, Fri 12 Mar",
+    "from": "LHR",
+    "to": "BCN",
+    "departure_date": "2027-03-12",
+    "target_price": 130,
+    "currency": "usd"
+  },
+  {
+    "name": "New York to Lisbon, 1-8 Feb",
+    "from": "JFK",
+    "to": "LIS",
+    "departure_date": "2027-02-01",
+    "return_date": "2027-02-08",
+    "target_price": 600
+  }
+]

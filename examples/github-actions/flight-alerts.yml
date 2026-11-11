@@ -1,0 +1,41 @@
+# Run the bot on GitHub's free scheduler instead of a server.
+# 1. Copy this file to .github/workflows/flight-alerts.yml in YOUR fork.
+# 2. Commit your watches.json (or keep it in the WATCHES_JSON secret, see below).
+# 3. Settings > Secrets and variables > Actions: add RAPIDAPI_KEY, TELEGRAM_BOT_TOKEN, TELEGRAM_CHAT_ID
+#    (and/or DISCORD_WEBHOOK_URL).
+name: flight-alerts
+on:
+  schedule:
+    - cron: "17 */6 * * *"   # every 6 hours; each run = one request per watch
+  workflow_dispatch:
+jobs:
+  check:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - name: watches from a secret (optional)
+        env:
+          WATCHES_JSON: ${{ secrets.WATCHES_JSON }}
+        run: if [ -n "$WATCHES_JSON" ]; then printf '%s' "$WATCHES_JSON" > watches.json; fi
+      - name: restore last alerted prices
+        uses: actions/cache/restore@v4
+        with:
+          path: state.json
+          key: alert-state-${{ github.run_id }}
+          restore-keys: alert-state-
+      - name: check fares
+        env:
+          RAPIDAPI_KEY: ${{ secrets.RAPIDAPI_KEY }}
+          TELEGRAM_BOT_TOKEN: ${{ secrets.TELEGRAM_BOT_TOKEN }}
+          TELEGRAM_CHAT_ID: ${{ secrets.TELEGRAM_CHAT_ID }}
+          DISCORD_WEBHOOK_URL: ${{ secrets.DISCORD_WEBHOOK_URL }}
+        run: python alert_bot.py --once
+      - name: save last alerted prices
+        uses: actions/cache/save@v4
+        if: always()
+        with:
+          path: state.json
+          key: alert-state-${{ github.run_id }}
