@@ -23,11 +23,28 @@ def test_oneway_and_roundtrip_bodies_use_documented_fields():
     one, rt = watches()
     path, body = ab.build_request(one)
     assert path == "oneway/v1" and "return_date" not in body
-    assert {"from_airport", "to_airport", "departure_date", "currency", "limit", "sort_type"} <= body.keys()
+    assert {"from_airport", "to_airport", "departure_date", "currency", "limit"} <= body.keys()
     path, body = ab.build_request(dict(rt, max_stops=0))
     assert path == "roundtrip/v1" and body["return_date"] == "2027-02-08"
     assert body["max_departure_stops"] == 0 and body["max_return_stops"] == 0
     assert all(k == k.lower() for k in body)
+
+
+def test_no_price_sort_so_google_sends_its_range_and_verdict():
+    for w in watches():
+        _, body = ab.build_request(w)
+        assert "sort_type" not in body and "max_price" not in body  # either one drops Google's range and verdict
+
+
+def test_cheapest_row_wins_when_it_is_not_first():
+    # default order: fewest stops first, so the cheapest row can come later
+    band = {"price_insights_low": 100, "price_insights_high": 200, "price_range_in_relation_to_other_periods": "low"}
+    rows = [dict(band, price_as_number=140, stops=0), dict(band, price_as_number=90, stops=1)]
+    w = {"name": "x", "from": "LHR", "to": "BCN", "departure_date": "2027-03-12"}
+    sent = []
+    state = ab.check_all([w], lambda path, body: rows, [sent.append], {}, now="T", log=lambda *_: None)
+    assert state == {"LHR-BCN_2027-03-12_": 90}
+    assert "under Google's usual range (100-200)" in sent[0] and "LOW" in sent[0]
 
 
 def test_alerts_only_when_worth_it_on_recorded_fares():

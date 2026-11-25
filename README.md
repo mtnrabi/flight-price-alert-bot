@@ -120,10 +120,15 @@ curl -X POST https://google-flights-live-api.p.rapidapi.com/api/google_flights/o
   -H "Content-Type: application/json" \
   -H "x-rapidapi-host: google-flights-live-api.p.rapidapi.com" \
   -H "x-rapidapi-key: $RAPIDAPI_KEY" \
-  -d '{"from_airport":"LHR","to_airport":"BCN","departure_date":"2027-03-12","currency":"usd","limit":5,"sort_type":"Price"}'
+  -d '{"from_airport":"LHR","to_airport":"BCN","departure_date":"2027-03-12","currency":"usd","limit":20}'
 ```
 
-Round trips go to `.../roundtrip/v1` with a `return_date`. Field reference:
+There is no `sort_type` on purpose. Google gives no usual range and no `low` / `typical` / `high` verdict on a
+price-sorted page, so with `"sort_type":"Price"` (or `max_price`) those fields come back empty and only
+`target_price` could ever alert. The bot takes the cheapest row itself. Rows come back with the fewest stops first
+and are cut at `limit`, so a round trip with many stops can be cheaper than the one reported.
+
+Round trips go to `.../roundtrip/v1` with a `return_date` and `"limit":10`. Field reference:
 [the API listing](https://rapidapi.com/mtnrabi/api/google-flights-live-api) and
 [api.flightpowers.com/docs](https://api.flightpowers.com/docs). The script also sends `_fp_source` /
 `_fp_tool` so FlightPowers can count requests from this example; the API removes them before the
