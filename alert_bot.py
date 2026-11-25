@@ -78,17 +78,20 @@ def build_request(w: dict) -> tuple[str, dict]:
         "to_airport": w["to"].upper(),
         "departure_date": w["departure_date"],
         "currency": w.get("currency", "usd"),
-        "limit": 5,
-        "sort_type": "Price",
     }
+    # No "sort_type" on purpose: Google gives no usual range and no low/typical/high verdict on a
+    # price-sorted page, so two of the three alert rules could never fire. cheapest() picks the row.
+    # The default order is fewest stops first, so "limit" is wide enough not to cut a cheap row with stops.
     if w.get("return_date"):
         body["return_date"] = w["return_date"]
         if w.get("max_stops") is not None:
             body["max_departure_stops"] = body["max_return_stops"] = int(w["max_stops"])
+        body["limit"] = 10
         path = "roundtrip/v1"
     else:
         if w.get("max_stops") is not None:
             body["max_stops"] = int(w["max_stops"])
+        body["limit"] = 20
         path = "oneway/v1"
     if w.get("passengers"):
         body["passengers"] = w["passengers"]
